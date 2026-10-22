@@ -6,14 +6,8 @@ MENU = {
     "Кофе": Decimal("3.50"),
     "Чай": Decimal("2.50"),
     "Бургер": Decimal("7.00"),
-    "БургердеЛюкс": Decimal("9.00"),
-    "Двойная картошка фри": Decimal("5.00"),
-    "Мокачано": Decimal("6.00"),
-    "Хот Дог": Decimal("4.00"),
-    "Золотой Бургер XL Делюкс": Decimal("156.00"),
     "Картошка фри": Decimal("3.00"),
     "Лимонад": Decimal("2.00"),
-    "Мороженное": Decimal("10.00")
 }
 
 PROMO_CODE = "TEEN10"
@@ -24,7 +18,6 @@ TIP_RATES = {
     "5%": Decimal("0.05"),
     "10%": Decimal("0.10"),
     "15%": Decimal("0.15"),
-    "100%": Decimal("100"),
 }
 
 
@@ -47,6 +40,8 @@ class CafeApp:
             text="Касса кофейни",
             font=("Arial", 20, "bold"),
         ).pack(pady=(0, 12))
+
+
 
         content = ttk.Frame(main_frame)
         content.pack(fill="both", expand=True)
